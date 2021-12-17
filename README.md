@@ -5,7 +5,7 @@ A website/web app for building survey Uganda. This build with Angular web framew
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
 
-To run the frontend server on your local machine, navigate to the the `loans` folder and run the following commands as instructed
+To run the frontend server on your local machine, navigate to the the `bsurvey` folder and run the following commands as instructed
 
 ### Install Node Modules
 
