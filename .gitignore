@@ -43,3 +43,6 @@ bsurvey/typings
 # System Files
 bsurvey/DS_Store
 bsurvey/Thumbs.db
+
+#Planned Backend
+bsurvey/backend
