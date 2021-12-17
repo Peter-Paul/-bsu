@@ -1,0 +1,45 @@
+# Frontend
+# compiled output
+bsurvey/dist
+bsurvey/tmp
+bsurvey/out-tsc
+# Only exists if Bazel was run
+bsurvey/bazel-out
+
+# dependencies
+bsurvey/node_modules
+
+# profiling files
+bsurvey/chrome-profiler-events*.json
+bsurvey/speed-measure-plugin*.json
+
+# IDEs and editors
+bsurvey/.idea
+bsurvey/.project
+bsurvey/.classpath
+bsurvey/.c9/
+bsurvey/*.launch
+bsurvey/.settings/
+bsurvey/*.sublime-workspace
+
+# IDE - VSCode
+bsurvey/.vscode/*
+bsurvey/!.vscode/settings.json
+bsurvey/!.vscode/tasks.json
+bsurvey/!.vscode/launch.json
+bsurvey/!.vscode/extensions.json
+bsurvey/.history/*
+
+# misc
+bsurvey/.sass-cache
+bsurvey/connect.lock
+bsurvey/coverage
+bsurvey/libpeerconnection.log
+bsurvey/npm-debug.log
+bsurvey/yarn-error.log
+bsurvey/testem.log
+bsurvey/typings
+
+# System Files
+bsurvey/DS_Store
+bsurvey/Thumbs.db

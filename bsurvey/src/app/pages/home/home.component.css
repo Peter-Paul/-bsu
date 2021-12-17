@@ -1,0 +1,23 @@
+.cover {
+  background-image: url(gallery\land-surveyor-1.jpeg);
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+p {
+  font-size: 19px;
+}
+.cover .container {
+  padding-top: 18%;
+}
+.content {
+  background-color: rgba(128, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+p {
+  text-align: justify;
+}

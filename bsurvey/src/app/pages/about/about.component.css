@@ -1,0 +1,63 @@
+.cover {
+  background-image: url(gallery/amos.JPG);
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.cover .container {
+  padding-top: 36%;
+}
+.container .cover-content {
+  background-color: white;
+  padding: 25px;
+}
+.cover-content div {
+  color: white;
+  background-color: maroon;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.values {
+  background-image: url(gallery/bg.png);
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+.values .container {
+  padding-top: 10%;
+}
+.social {
+  height: 90vh;
+}
+.social .long {
+  margin-top: -19%;
+}
+.social-content img {
+  border-radius: 5px;
+}
+.social-content h2 {
+  color: maroon;
+}
+p {
+  text-align: justify;
+}
+.team {
+  height: 100vh;
+}
+.team .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: white;
+}
+.team h2 {
+  font-weight: 400;
+}
+.team .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}

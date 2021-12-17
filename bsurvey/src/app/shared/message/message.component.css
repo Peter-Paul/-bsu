@@ -1,0 +1,13 @@
+.message {
+  background-color: maroon;
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+}
+.message a {
+  /* color: rgb(37, 37, 235); */
+  margin: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,139 @@
+<section>
+  <!--cover-->
+  <div class="cover">
+    <div class="col-10 offset-1 offset-md-6 col-md-6">
+      <div class="container">
+        <div class="cover-content">
+          <div class="shadow">
+            <h5 style="font-family: 'Roboto+Condensed', sans-serif;">
+              Our Vision
+            </h5>
+            <p style="font-family: 'Roboto+Condensed', sans-serif;">
+              To realize a stable and secure Real Estate industry
+            </p>
+          </div>
+          <div class="shadow">
+            <h5 style="font-family: 'Roboto+Condensed', sans-serif;">
+              Our Mission
+            </h5>
+            <p style="font-family: 'Roboto+Condensed', sans-serif;">
+              Create an enabling real estate environment through initiating
+              standards for pricing, costing and provision of real estate
+              products coupled with effective execution of the services there
+              within to the satisfaction of our clients
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--values-->
+  <div class="values">
+    <div class="container">
+      <div class="row">
+        <div class="card-deck">
+          <div class="card border-danger shadow" *ngFor="let value of values">
+            <div class="card-body">
+              <h5
+                class="card-title text-primary"
+                style="
+                  text-align: center;
+                  font-family: 'Roboto+Condensed', sans-serif;
+                  font-weight: bold;
+                "
+              >
+                {{ value.name }}
+              </h5>
+              <p
+                class="card-text"
+                style="font-family: 'Roboto+Condensed', sans-serif;"
+              >
+                {{ value.detail }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Coperate Social Responsibility-->
+  <div class="social">
+    <div class="container">
+      <div class="row">
+        <!--image-->
+        <div class="col-4 d-none d-lg-block">
+          <img src="assets/gallery/social.JPG" class="img-fluid long" />
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="social-content">
+            <h2 style="font-family: 'Roboto+Condensed', sans-serif;">
+              Coperate Social Responsibility
+            </h2>
+            <p style="font-family: 'Roboto+Condensed', sans-serif;">
+              We also run a charity foundation started to support the
+              unfortunate from our hard work and earnings. Many visits are made
+              annually to express our concern for equity and development
+              amoungest the low income earning Ugandans. Every September we
+              target families that have fallen short and provide them with the
+              little we can to sustain them and also build on their ideas for
+              improvement on their standard of living. We also give
+              encouragement so they have a reason not to feel worthless in this
+              developing environment.
+            </p>
+            <div class="row">
+              <div class="col-6">
+                <img src="assets/gallery/charity1.JPG" class="img-fluid" />
+              </div>
+              <div class="col-6">
+                <img src="assets/gallery/charity2.JPG" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- team-->
+  <div class="team">
+    <h2
+      class="text-center mb-5"
+      style="font-family: 'Roboto+Condensed', sans-serif; color: maroon;"
+    >
+      Company Profile
+    </h2>
+    <div class="container" style="background-color: maroon;">
+      <!-- Three columns of text below the carousel -->
+      <div class="row pt-5">
+        <div class="col-12 col-lg-4" *ngFor="let person of people">
+          <img
+            class="rounded-circle mb-2"
+            src="{{ person.image }}"
+            alt="Generic placeholder image"
+            width="160"
+            height="160"
+          />
+          <h3>{{ person.name }}</h3>
+          <p class="text-left">
+            {{ person.position }}
+          </p>
+          <a
+            class="btn btn-lg btn-link mx-1"
+            href="{{ person.email }}"
+            style="color: white;"
+          >
+            Email <span><i class="fa fa-envelope-square mx-1"></i></span>
+          </a>
+          <a
+            class="btn btn-lg btn-link"
+            href="{{ person.number }}"
+            style="color: white;"
+          >
+            Call<i class="fa fa-phone mx-1"></i>
+          </a>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </div>
+  <app-footer></app-footer>
+</section>

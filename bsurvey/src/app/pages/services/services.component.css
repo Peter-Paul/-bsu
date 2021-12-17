@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+.cover {
+  background-image: url(gallery/surveying-and-geomatics-engineering-services.jpg);
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.cover .container {
+  padding-top: 15%;
+}
+.services {
+  height: 130vh;
+}
+.services img {
+  border-radius: 5px;
+}
+h1,
+h5 {
+  color: maroon;
+  font-weight: bold;
+}
+.lacasa {
+  height: 100vh;
+}
+.lacasa-container {
+  padding-top: 6%;
+}
+.lacasa-content {
+  border-radius: 5px;
+  color: white;
+  background-color: maroon;
+  padding: 15px;
+}
+p {
+  text-align: justify;
+}

@@ -1,0 +1,124 @@
+<section>
+  <!--cover-->
+  <div class="cover">
+    <div class="container">
+      <div
+        class="offset-lg-6 col-lg-6 offset-xl-6 col-xl-6 offset-sm-1 col-sm-10 mt-lg-0"
+        style="margin-top: 38%;"
+      >
+        <div class="message">
+          <app-message></app-message>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--services-->
+  <div class="services pt-5">
+    <div class="container py-2" *ngFor="let service of services">
+      <!--Surveying-->
+      <div class="row pb-1">
+        <div class="col-lg-3 col-md-4 d-none d-lg-block d-md-block">
+          <img
+            src="{{ service.image }}"
+            class="img-fluid shadow-lg"
+            alt="Responsive image"
+          />
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <h1 style="font-family: 'Roboto+Condensed', sans-serif;">
+            {{ service.name }}
+          </h1>
+          <p style="font-family: 'Roboto+Condensed', sans-serif;">
+            {{ service.about.slice(0, 150) + "..." }}
+          </p>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-sm btn-light text-primary"
+            style="font-size: large;"
+            data-toggle="modal"
+            [attr.data-target]="'#' + service.id"
+          >
+            Read More...
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="{{ service.id }}"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="exampleModalScrollableTitle"
+                    style="font-family: 'Roboto+Condensed', sans-serif;"
+                  >
+                    {{ service.name }}
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p style="font-family: 'Roboto+Condensed', sans-serif;">
+                    {{ service.about }}
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--lacasa-->
+  <div class="lacasa">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-7 col-sm-3">
+          <img src="assets/gallery/lacasa.jpg" class="img-fluid" />
+        </div>
+        <div class="col-lg-4 col-sm-12 mt-sm-0 lacasa-container">
+          <div class="lacasa-content ml-lg-n5 shadow-lg">
+            <h2 style="font-family: 'Roboto+Condensed', sans-serif;">
+              La' Casa
+            </h2>
+            <p style="font-family: 'Roboto+Condensed', sans-serif;">
+              La’casa is an affordable Pan African Real Estate Developer focused
+              on sustainable housing in Africa. It is a sister company to
+              Building Survey. Its headquarters are in Kampala, Uganda. La’casa
+              was established in 2017, by a group of social investors in order
+              to put to reality low-income housing models in Africa.The vision
+              of La’casa is to enable ordinary Africans, most of whom are active
+              in the informal sector, to acquire a house within their financial
+              means and raise their families in a safe, clean and healthy
+              environment. In so doing, La’casa achieves social impact,
+              environmental and financial returns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</section>
